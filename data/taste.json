@@ -1,50 +1,117 @@
 {
   "profile": {
-    "name": "TY's Music Taste Map",
-    "headline": "새벽에 더 선명해지는 보컬, 부드러운 리듬, 몽환적인 신스와 자주 만나는 취향입니다."
+    "name": "멍설윤의 음악 취향",
+    "headline": "새벽 감성, 선명한 보컬, 몽환적인 신스와 부드러운 그루브가 모이는 개인 음악 취향 리포트."
   },
-  "tags": ["Late Night", "Dreamy", "R&B", "K-Indie", "Groove", "Soft Vocal"],
-  "moods": ["새벽 감성", "몽환적인 질감", "부드러운 베이스", "차분한 드라이브", "선명한 보컬"],
-  "topArtists": [
+  "stats": {
+    "scrobbles": 44
+  },
+  "tags": ["Late Night", "Dreamy", "R&B", "K-Indie", "City Pop", "Soft Vocal"],
+  "topCards": [
     {
-      "name": "wave to earth",
-      "mood": "따뜻한 밴드 사운드"
+      "type": "Artists",
+      "change": "32%",
+      "total": 24,
+      "badge": "Top Artist",
+      "title": "wave to earth",
+      "artist": "따뜻한 밴드 사운드",
+      "changeLabel": "new artist",
+      "url": "https://music.youtube.com/search?q=wave%20to%20earth",
+      "colors": ["#ff4d5d", "#210204", "#a30813"],
+      "ranks": [
+        { "rank": 1, "name": "wave to earth", "count": 8 },
+        { "rank": 2, "name": "The Weeknd", "count": 4 },
+        { "rank": 3, "name": "백예린", "count": 3 },
+        { "rank": 4, "name": "NewJeans", "count": 3 },
+        { "rank": 5, "name": "Frank Ocean", "count": 2 }
+      ]
     },
     {
-      "name": "The Weeknd",
-      "mood": "어두운 신스 팝"
+      "type": "Albums",
+      "change": "36%",
+      "total": 24,
+      "badge": "Top Album",
+      "title": "night archive",
+      "artist": "몽환적인 앨범 무드",
+      "url": "https://music.youtube.com/search?q=late%20night%20r%26b%20playlist",
+      "colors": ["#64d4bd", "#0d2f31", "#704cff"],
+      "ranks": [
+        { "rank": 1, "name": "soft room", "count": 7 },
+        { "rank": 2, "name": "blue hour", "count": 6 },
+        { "rank": 3, "name": "after midnight", "count": 4 },
+        { "rank": 4, "name": "dream pop set", "count": 2 },
+        { "rank": 5, "name": "city lights", "count": 2 }
+      ]
     },
     {
-      "name": "NewJeans",
-      "mood": "가볍고 세련된 리듬"
-    },
-    {
-      "name": "Frank Ocean",
-      "mood": "섬세한 R&B"
-    },
-    {
-      "name": "백예린",
-      "mood": "맑은 보컬 무드"
+      "type": "Tracks",
+      "change": "22%",
+      "total": 32,
+      "badge": "Top Track",
+      "title": "bad",
+      "artist": "wave to earth",
+      "url": "https://music.youtube.com/search?q=wave%20to%20earth%20bad",
+      "colors": ["#4aa3ff", "#06162b", "#ff3e95"],
+      "ranks": [
+        { "rank": 1, "name": "bad", "count": 4 },
+        { "rank": 2, "name": "Out of Time", "count": 3 },
+        { "rank": 3, "name": "Ditto", "count": 3 },
+        { "rank": 4, "name": "Square", "count": 2 },
+        { "rank": 5, "name": "Pink + White", "count": 2 }
+      ]
     }
   ],
-  "recommendations": [
+  "decades": [
+    { "label": "Pre-1960", "value": 2 },
+    { "label": "1970s", "value": 10 },
+    { "label": "1980s", "value": 14 },
+    { "label": "1990s", "value": 22 },
+    { "label": "2000s", "value": 36 },
+    { "label": "2010s", "value": 58 },
+    { "label": "2020s", "value": 84 }
+  ],
+  "listen": [
     {
       "title": "bad",
       "artist": "wave to earth",
-      "reason": "부드러운 기타와 느긋한 보컬이 새벽 취향에 잘 붙는 곡입니다.",
-      "url": "https://music.youtube.com/"
+      "mood": "soft band",
+      "url": "https://music.youtube.com/search?q=wave%20to%20earth%20bad",
+      "colors": ["#ff4d5d", "#210204", "#a30813"]
     },
     {
       "title": "Out of Time",
       "artist": "The Weeknd",
-      "reason": "레트로한 리듬과 매끈한 보컬 라인이 밤 분위기와 잘 맞습니다.",
-      "url": "https://music.youtube.com/"
+      "mood": "retro night",
+      "url": "https://music.youtube.com/search?q=The%20Weeknd%20Out%20of%20Time",
+      "colors": ["#ffcc3f", "#251600", "#ff4d5d"]
     },
     {
       "title": "Ditto",
       "artist": "NewJeans",
-      "reason": "가볍게 흐르지만 오래 남는 멜로디가 취향 지도의 중심에 가깝습니다.",
-      "url": "https://music.youtube.com/"
+      "mood": "clean rhythm",
+      "url": "https://music.youtube.com/search?q=NewJeans%20Ditto",
+      "colors": ["#4aa3ff", "#06162b", "#64d4bd"]
+    },
+    {
+      "title": "Square",
+      "artist": "백예린",
+      "mood": "clear vocal",
+      "url": "https://music.youtube.com/search?q=%EB%B0%B1%EC%98%88%EB%A6%B0%20Square",
+      "colors": ["#bda2ff", "#171033", "#64d4bd"]
+    },
+    {
+      "title": "Pink + White",
+      "artist": "Frank Ocean",
+      "mood": "warm r&b",
+      "url": "https://music.youtube.com/search?q=Frank%20Ocean%20Pink%20%2B%20White",
+      "colors": ["#ffa5ad", "#2f0712", "#ffcc3f"]
+    },
+    {
+      "title": "Hype Boy",
+      "artist": "NewJeans",
+      "mood": "bright groove",
+      "url": "https://music.youtube.com/search?q=NewJeans%20Hype%20Boy",
+      "colors": ["#64d4bd", "#062322", "#4aa3ff"]
     }
   ]
 }
