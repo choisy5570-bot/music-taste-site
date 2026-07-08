@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TY's Music Taste Map</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <div class="hero__content">
+          <p class="eyebrow">YouTube Music Taste Archive</p>
+          <h1 id="profile-name">TY's Music Taste Map</h1>
+          <p id="headline" class="headline">
+            내가 자주 찾는 소리, 분위기, 아티스트를 한 장의 음악 취향 지도로 모았습니다.
+          </p>
+          <div id="tags" class="tag-row"></div>
+        </div>
+      </section>
+
+      <section class="grid section">
+        <article class="panel">
+          <p class="section-label">Taste Signal</p>
+          <h2>요즘 내가 끌리는 무드</h2>
+          <div id="moods" class="mood-list"></div>
+        </article>
+
+        <article class="panel">
+          <p class="section-label">Top Artists</p>
+          <h2>자주 돌아가는 아티스트</h2>
+          <div id="artists" class="artist-list"></div>
+        </article>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="section-label">Recommendations</p>
+          <h2>내 취향을 타고 이어지는 곡들</h2>
+        </div>
+        <div id="recommendations" class="song-grid"></div>
+      </section>
+
+      <section class="section footer-note">
+        <p>
+          이 페이지는 개인 음악 취향을 보여주는 정적 사이트입니다. 원본 청취 기록 대신
+          공개해도 되는 요약 데이터만 사용하세요.
+        </p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

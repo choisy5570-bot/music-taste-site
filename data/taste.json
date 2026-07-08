@@ -1,0 +1,50 @@
+{
+  "profile": {
+    "name": "TY's Music Taste Map",
+    "headline": "새벽에 더 선명해지는 보컬, 부드러운 리듬, 몽환적인 신스와 자주 만나는 취향입니다."
+  },
+  "tags": ["Late Night", "Dreamy", "R&B", "K-Indie", "Groove", "Soft Vocal"],
+  "moods": ["새벽 감성", "몽환적인 질감", "부드러운 베이스", "차분한 드라이브", "선명한 보컬"],
+  "topArtists": [
+    {
+      "name": "wave to earth",
+      "mood": "따뜻한 밴드 사운드"
+    },
+    {
+      "name": "The Weeknd",
+      "mood": "어두운 신스 팝"
+    },
+    {
+      "name": "NewJeans",
+      "mood": "가볍고 세련된 리듬"
+    },
+    {
+      "name": "Frank Ocean",
+      "mood": "섬세한 R&B"
+    },
+    {
+      "name": "백예린",
+      "mood": "맑은 보컬 무드"
+    }
+  ],
+  "recommendations": [
+    {
+      "title": "bad",
+      "artist": "wave to earth",
+      "reason": "부드러운 기타와 느긋한 보컬이 새벽 취향에 잘 붙는 곡입니다.",
+      "url": "https://music.youtube.com/"
+    },
+    {
+      "title": "Out of Time",
+      "artist": "The Weeknd",
+      "reason": "레트로한 리듬과 매끈한 보컬 라인이 밤 분위기와 잘 맞습니다.",
+      "url": "https://music.youtube.com/"
+    },
+    {
+      "title": "Ditto",
+      "artist": "NewJeans",
+      "reason": "가볍게 흐르지만 오래 남는 멜로디가 취향 지도의 중심에 가깝습니다.",
+      "url": "https://music.youtube.com/"
+    }
+  ]
+}
