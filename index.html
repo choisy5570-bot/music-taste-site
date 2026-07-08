@@ -3,49 +3,117 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TY's Music Taste Map</title>
+    <title>멍설윤의 음악 취향</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="page">
-      <section class="hero">
-        <div class="hero__content">
-          <p class="eyebrow">YouTube Music Taste Archive</p>
-          <h1 id="profile-name">TY's Music Taste Map</h1>
+    <main class="report">
+      <header class="topbar">
+        <a class="brand" href="#top">멍설윤.fm</a>
+        <nav aria-label="페이지 이동">
+          <a href="#music">Top Music</a>
+          <a href="#charts">Charts</a>
+          <a href="#listen">Listen</a>
+        </nav>
+      </header>
+
+      <section id="top" class="hero">
+        <div class="hero__copy">
+          <p class="kicker">Music Taste Report</p>
+          <h1>멍설윤의 음악 취향</h1>
           <p id="headline" class="headline">
-            내가 자주 찾는 소리, 분위기, 아티스트를 한 장의 음악 취향 지도로 모았습니다.
+            자주 듣는 아티스트, 곡, 무드를 데이터 리포트처럼 시각화한 개인 음악 취향 보드.
           </p>
           <div id="tags" class="tag-row"></div>
         </div>
+        <aside class="week-card" aria-label="주간 리스닝 요약">
+          <div class="week-card__head">
+            <span>6 Sep 2024 - 12 Sep 2024</span>
+            <button id="shuffle-theme" type="button">색 바꾸기</button>
+          </div>
+          <div class="scrobble">
+            <span>Scrobbles</span>
+            <strong id="scrobble-count">44</strong>
+            <small>+52% vs. last week</small>
+          </div>
+          <div class="bar-chart" aria-label="요일별 감상량">
+            <span style="--h: 34%"></span>
+            <span style="--h: 28%"></span>
+            <span style="--h: 16%"></span>
+            <span style="--h: 46%"></span>
+            <span style="--h: 72%"></span>
+            <span style="--h: 88%"></span>
+            <span style="--h: 22%"></span>
+          </div>
+          <div class="days">
+            <span>Fri</span><span>Sat</span><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span>
+          </div>
+        </aside>
       </section>
 
-      <section class="grid section">
-        <article class="panel">
-          <p class="section-label">Taste Signal</p>
-          <h2>요즘 내가 끌리는 무드</h2>
-          <div id="moods" class="mood-list"></div>
-        </article>
-
-        <article class="panel">
-          <p class="section-label">Top Artists</p>
-          <h2>자주 돌아가는 아티스트</h2>
-          <div id="artists" class="artist-list"></div>
-        </article>
-      </section>
-
-      <section class="section">
-        <div class="section-heading">
-          <p class="section-label">Recommendations</p>
-          <h2>내 취향을 타고 이어지는 곡들</h2>
+      <section id="music" class="section">
+        <div class="section-title">
+          <p>Top Music</p>
+          <h2>이번 취향의 중심</h2>
         </div>
-        <div id="recommendations" class="song-grid"></div>
+        <div id="top-cards" class="top-grid"></div>
       </section>
 
-      <section class="section footer-note">
-        <p>
-          이 페이지는 개인 음악 취향을 보여주는 정적 사이트입니다. 원본 청취 기록 대신
-          공개해도 되는 요약 데이터만 사용하세요.
-        </p>
+      <section id="charts" class="section chart-layout">
+        <article class="chart-card">
+          <div class="card-menu">:</div>
+          <p class="card-label">Top tags</p>
+          <div id="tag-mountain" class="tag-mountain" aria-label="태그 변화 차트"></div>
+        </article>
+
+        <article class="chart-card">
+          <div class="card-menu">:</div>
+          <p class="card-label">Music by decade</p>
+          <div id="decades" class="decades"></div>
+        </article>
+
+        <article class="chart-card">
+          <div class="card-menu">:</div>
+          <p class="card-label">Mood ratio</p>
+          <div class="radar">
+            <div class="radar__shape"></div>
+            <span class="radar__point point-a">vocal</span>
+            <span class="radar__point point-b">groove</span>
+            <span class="radar__point point-c">dream</span>
+          </div>
+        </article>
+
+        <article class="chart-card">
+          <div class="card-menu">:</div>
+          <p class="card-label">Listening clock</p>
+          <div class="clock">
+            <span style="--r: 0deg; --h: 34%"></span>
+            <span style="--r: 22.5deg; --h: 62%"></span>
+            <span style="--r: 45deg; --h: 42%"></span>
+            <span style="--r: 67.5deg; --h: 30%"></span>
+            <span style="--r: 90deg; --h: 18%"></span>
+            <span style="--r: 112.5deg; --h: 22%"></span>
+            <span style="--r: 135deg; --h: 36%"></span>
+            <span style="--r: 157.5deg; --h: 78%"></span>
+            <span style="--r: 180deg; --h: 58%"></span>
+            <span style="--r: 202.5deg; --h: 28%"></span>
+            <span style="--r: 225deg; --h: 20%"></span>
+            <span style="--r: 247.5deg; --h: 26%"></span>
+            <span style="--r: 270deg; --h: 44%"></span>
+            <span style="--r: 292.5deg; --h: 52%"></span>
+            <span style="--r: 315deg; --h: 82%"></span>
+            <span style="--r: 337.5deg; --h: 70%"></span>
+          </div>
+          <p class="clock-note"><strong>12:00am</strong> 가장 취향이 선명해지는 시간</p>
+        </article>
+      </section>
+
+      <section id="listen" class="section">
+        <div class="section-title">
+          <p>Listen Now</p>
+          <h2>카드에서 바로 들으러 가기</h2>
+        </div>
+        <div id="listen-list" class="listen-list"></div>
       </section>
     </main>
 
